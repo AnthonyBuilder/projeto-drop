@@ -129,11 +129,14 @@ body {
 .row {
     padding: 24px 10px;
 }
+
 .header {
     width: 100%;
     height: 56px;
     padding: 8px;
-    background-color: rgb(2, 2, 2);
+
+
+    box-shadow: 0 15px 170px;
     position: fixed;
     display: none;
     z-index: 10;
@@ -150,7 +153,6 @@ body {
 
     animation-duration: 1s;
     animation-name: fadeAndTransition;
-    color: white;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
@@ -160,7 +162,6 @@ body {
 }
 
 .header h2 {
-    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     margin: 16px 13px;
@@ -172,7 +173,7 @@ body {
 }
 
 .header h2:hover {
-    color: rgb(138, 138, 138);
+    color: rgba(177, 177, 177, 0.452);
     
 }
 
@@ -184,6 +185,13 @@ body {
     animation: fadeIn;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
     animation-duration: 1s;
+
+    background: linear-gradient(339deg, #a52a72, #335da5);
+    background-size: 200% 200%;
+
+    -webkit-animation: transition-gradient 6s ease infinite; 
+    -moz-animation: transition-gradient 6s ease infinite;
+    animation: transition-gradient 6s ease infinite;
 }
 .header-show {
     display: block;
@@ -196,6 +204,22 @@ body {
     to {
         opacity: 1;
     }
+}
+
+@-webkit-keyframes transition-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes transition-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes transition-gradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 
