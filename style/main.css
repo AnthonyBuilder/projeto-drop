@@ -217,7 +217,6 @@ body {
     height: 94px;
     /* margin-top: 18px; */
     left: 0;
-    background-image: linear-gradient( transparent ,black 109%);
     margin-bottom: -1px;
 }
 
@@ -241,7 +240,7 @@ body {
 .title-card {
   font-size: 30px;
   font-weight: 1000;
-  text-shadow: 0 10px 46px black;
+  text-shadow: 0 0px 117px black;
 }
 
 .subtitle {
@@ -426,6 +425,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .img-playlist {
     width: 100px;
     height: 100px;
