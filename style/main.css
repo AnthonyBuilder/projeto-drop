@@ -115,7 +115,7 @@ body {
 @keyframes fadeAndTransition {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(-35px);
     }
     
     to {
@@ -135,11 +135,14 @@ body {
     height: 56px;
     padding: 8px;
 
-
-    box-shadow: 0 15px 170px;
+    box-shadow: 0 6px 170px;
     position: fixed;
     display: none;
     z-index: 10;
+
+    background: linear-gradient(339deg, #a52a72, #335da5);
+    background-size: 200% 200%;
+
 }
 
 .header h1 {
@@ -150,8 +153,9 @@ body {
     margin-left: 5px;
     /* margin-bottom: 23px; */
     margin-top: -7px;
+    font-weight: 900;
 
-    animation-duration: 1s;
+    animation-duration: .99s;
     animation-name: fadeAndTransition;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
@@ -162,39 +166,37 @@ body {
 }
 
 .header h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-weight: 500;
     margin: 16px 13px;
     transition: 350ms;
-    animation-duration: 1.2s;
+    animation-duration: .99s;
     animation-name: fadeAndTransition;
+    font-weight: 500;
+
     color: white;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .header h2:hover {
-    color: rgba(177, 177, 177, 0.452);
-    
+    color: rgba(177, 177, 177, 0.452); 
 }
 
 .header ul li {
     padding: 10px
 }
 
-.header-fade {
-    animation: fadeIn;
-    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
-    animation-duration: 1s;
-
-    background: linear-gradient(339deg, #a52a72, #335da5);
-    background-size: 200% 200%;
-
-    -webkit-animation: transition-gradient 6s ease infinite; 
-    -moz-animation: transition-gradient 6s ease infinite;
-    animation: transition-gradient 6s ease infinite;
-}
-.header-show {
+.header-transition {
+    animation: transition-gradient 4s ease-in-out infinite;
     display: block;
+}
+
+.header-show {
+  
+    animation: fadeAndTransition;
+    animation-duration: .869s;
+    animation-timing-function: ease;
+    
 }
 
 @-webkit-keyframes fadeIn {
@@ -206,32 +208,18 @@ body {
     }
 }
 
-@-webkit-keyframes transition-gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes transition-gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes transition-gradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+
 
 
 .card {
     width: 230px;
     height: 320px;
-    background-image:  linear-gradient(45deg, #a8d4ff94 0%,#a900bc8a 100%);
+    background:  linear-gradient(45deg, #3a99f8c7 0%,#a900bcb0 100%);
     border-radius: 16px;
     position: absolute;
     color: white;
-    box-shadow: 0px 0px 10px 0px black;
-    transition: 450ms;
+    box-shadow: 0px 0px 1px 0px black;
+    transition: 340ms;
 }
 
 .content-card {
@@ -273,25 +261,30 @@ body {
 }
 
 .card2 {
+  background-size: 100% 100%;
   margin-left:250px;
-  background-image: linear-gradient(10deg, #007ce88c 0%,#ff00406e 100%)
+  background: linear-gradient(10deg, #0a6cc2ed 0%,#be0432ce 100%)
 }
 
 .card3 {
-    margin: 0px 500px;
-    background-image: linear-gradient(45deg, #cd00e894 0%,#40309b6e 100%)
+    background-size: 100% 100%;
+    margin-left: 500px;
+    background: linear-gradient(45deg, #cd00e894 0%,#671ddc94 100%);
 }
 
 .card4 {
+    background-size: 100% 100%;
     margin: 339px 0;
-    background-image: linear-gradient(45deg, #5d33d3 0%,#0e950e7a 100%)
+    background: linear-gradient(45deg, #5d33d3 0%,#0e950e7a 100%)
 }
 
 .card5 {
-    margin: 339px 251px;
+    background-size: 100% 100%;
+    margin-left: 251px;
     width: 481px;
     height: 144px;
-    background-image: linear-gradient(45deg, #7bef5e7d 0%,#03b0c18a 100%);
+    background: linear-gradient(45deg, #7bef5e7d 0%,#03b0c18a 100%);
+    margin-top: 339px;
 }
 
 .content-card-premium {
@@ -301,12 +294,19 @@ body {
     font-size: 29px;
 }
 .img {
-  transition: 500ms;
+  transition: 330ms;
 }
 
 .card:hover {
   transform: translateY(-15px);
 }
+
+
+.card-before-blur {
+    transform: translateY(-12px) ;
+    filter: blur(38px);
+}
+
 
 .img:hover {
   transform: scale(1.05);
@@ -415,10 +415,10 @@ body {
 .card-profile-main  {
     height: 103px;
     border-radius: 16px;
-    background-color: rgb(16, 16, 16);
     margin: 101px 12px;
     width: 364px;
     display: flex;
+    background-image: linear-gradient(97deg, #6b6b6b9c, #484848b8);
 }
 
 .title-profile-main {
@@ -439,7 +439,7 @@ body {
     height: 121px;
     border-radius: 16px;
     background-image: linear-gradient(45deg, #a8d4ff3d 0%,#a900bc3b 100%);
-    width: 365px;
+    width: 364px;
     margin: -78px 13px;
     display: flex;
     background-color: #00000085;
@@ -456,4 +456,20 @@ body {
     margin: 11px;
     border-radius: 11px;
     box-shadow: 0 0 20px -8px;
+}
+
+@-webkit-keyframes transition-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes transition-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes transition-gradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
