@@ -28,28 +28,42 @@
                 <l1><h1>Drop</h1></l1>
                 <l1><h2>Home</h2></l1>
                 <l1><h2>Perfil</h2></l1>
-                <l1><h2>Amigos</h2></l1>
+                <l1><h2><a href="/amigos/">Amigos</a></h2></l1>
                 <l1><h2>Coleção</h2></l1>
             </ul>
         </div>
     </div>
-   
+
+
+   //cards de musicas
     <div class="wrapper-main" id="wrapper-main">
+        <h1 class="sync" id="textSync">Escolhidas para você</h1>
+        <div class="perfil-sugestions">
+            <img class="perfil-sugestions-img" src="img/profile.jpg">
+            <div class="img">
+                <img class="img2" style="margin: 50px 20px;" src="img/lemonade.jpg">
+            </div>
+            <div class="img">
+                <img class="img2"  style="margin: 50px  10px;" src="img/lilmoseys.jpg">
+            </div>
+    
+        </div>
+            
         <div class="wrapper-produtos">
         <h1 class="sync" id="textSync">Musicas mais tocadas</h1>
             <div class="row">
-                    <div class="card" id="card-before"></div>
+                <div class="card" id="card-before"></div>
 
-                    <div class="card" id="card">
-                        <div class="wrapper-card">
-                            <div class="img">
-                                <img class="img2" src="img/lemonade.jpg">
-                            </div>
-                            <div class="content-card">
-                                <h4 class="title-card">Lemonade </h4>
-                                <h4 class="subtitle">Tay-K</h4>
-                            </div>
+                <div class="card" id="card">
+                    <div class="wrapper-card">
+                        <div class="img">
+                            <img class="img2" src="img/lemonade.jpg">
                         </div>
+                        <div class="content-card">
+                            <h4 class="title-card">Lemonade </h4>
+                            <h4 class="subtitle">Tay-K</h4>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="card2 card" id="card-before2"></div>
@@ -65,7 +79,8 @@
                     </div>
                 </div>
 
-                <div class="card card3">
+                <div class="card3 card" id="card-before3"></div>
+                <div class="card card3" id="card3">
                     <div class="wrapper-card">
                         <div class="img">
                             <img class="img2" src="img/glock.jpg">
@@ -77,31 +92,63 @@
                     </div>
                 </div>
 
-                <div class="card card4">
+                <div class="card7 card" id="card-before7" style="margin-left: 750px;"></div>
+                <div class="card card7" id="card7" style="margin-left: 750px;">
                     <div class="wrapper-card">
                         <div class="img">
-                            <img class="img2" src="img/shor.jpg">
+                            <img class="img2" src="img/jowy.jpg">
                         </div>
                         <div class="content-card">
-                            <h4 class="title-card">Only Me</h4>
-                            <h4 class="subtitle">Lerado Khalil</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card5">
-                    <div class="wrapper-card" style="display:flex; flex-direction:row;">
-                        <div class="content-card-premium" style="position: absolute; font-family: 'Roboto', sans-serif;margin: 7px 265px; font-size: 32px;">
-                            <h4 class="card-premium-title" style="font-size: 37px;font-weight: 900;">Premium</h4>
-                            <h4 class="card-premium-subtitle">Por apenas R$ 15,99</h4>
-                        </div>
-                        <div class="img">
-                            <img class="img2" src="img/appleair.jpg">
+                            <h4 class="title-card">Tired Boy</h4>
+                            <h4 class="subtitle">Joey pecoraro</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="destaques-section">
+
+            <h1 class="sync" id="textSync">Destaques</h1>
+    
+            <div class="card card4">
+                <div class="wrapper-card">
+                    <div class="img">
+                        <img class="img2" src="img/shor.jpg">
+                    </div>
+                    <div class="content-card">
+                        <h4 class="title-card">Only Me</h4>
+                        <h4 class="subtitle">Lerado Khalil</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="wrapper-card" style="display:flex; flex-direction:row;">
+                    <div class="content-card-premium" style="position: absolute; font-family: 'Roboto', sans-serif;margin: 7px 265px; font-size: 32px;">
+                        <h4 class="card-premium-title" style="font-size: 41px;font-weight: 900;">Premium</h4>
+                        <h4 class="card-premium-subtitle">Por apenas R$ 15,99</h4>
+                    </div>
+                    <div class="img">
+                        <img class="img2" src="img/appleair.jpg">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card card6">
+                <div class="wrapper-card">
+                    <div class="img">
+                        <img class="img2" src="img/newmoney.jpg">
+                    </div>
+                    <div class="content-card">
+                        <h4 class="title-card">New Money</h4>
+                        <h4 class="subtitle">Spacejam Bo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 
     <div class="container-right" id="container-right">
         <div id="card-profile-main" class="card-profile-main">
