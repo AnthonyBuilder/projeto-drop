@@ -129,7 +129,13 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    padding: 24px 10px;
+    padding: 26px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header {
@@ -142,7 +148,7 @@ body {
     display: none;
     z-index: 10;
     
-    background: linear-gradient(380deg, #971f65, #1e3866, #86115f, #0d7c4e);
+    background: linear-gradient(380deg, #aa1453, #1e3866, #0d7c4e);
     background-size: 600% 600%;
 
 }
@@ -232,10 +238,9 @@ body {
 
 .img2{
     width: 210px;
-    margin-top: 10px;
+    margin: 10px;
     border-radius: 16px;
-    margin-left: 9px;
-    box-shadow: 0 0 37px -8px black;
+    box-shadow: 0px 1px 37px -9px black;
 }
 
 
@@ -258,13 +263,13 @@ body {
 
 .card2 {
   background-size: 100% 100%;
-  margin-left:250px;
+ 
   background: linear-gradient(10deg, #0a6cc2ed 0%,#be0432ce 100%)
 }
 
 .card3 {
     background-size: 100% 100%;
-    margin-left: 500px;
+    
     background: linear-gradient(45deg, #cd00e894 0%,#671ddc94 100%);
 }
 
@@ -277,7 +282,7 @@ body {
 
 .card7 {
     background-size: 100% 100%;
-    margin-left: 500px;
+    
     background: linear-gradient(46deg, #444d58 ,#924929 );
 }
 .card5 {
@@ -302,29 +307,37 @@ body {
     margin: 25px 252px;
     background: linear-gradient(45deg, rgb(18, 51, 199) 0%,#BE0D21 100%)
 }
+.img {
+    transition: 464ms cubic-bezier(0.29, 0.89, 0.32, 1.28);
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+  }
+  
+  
+  .card-before-blur {
+      transform: translateY(-12px) ;
+      filter: blur(38px);
+  }
+  
+  
+  .img:hover {
+      transform: scale(1.11);
+  }
 
-.img { 
-    transition: 330ms;
-}
+  .colum {
+    float: left;
+    width: 20%;
+  }
 
-.card:hover {
-  box-shadow: 0 10px 30px -10px black;  
-  transform: translateY(-15px);
-}
-
-
-.card-before-blur {
-    transform: translateY(-15px) ;
-    filter: blur(31px);
-    opacity: .8;
-    animation:  transition-gradient 0.5s ease infinite;
-    
-}
-
-
-.img:hover { transform: scale(1.05); }
-
-
+  @media screen and (max-width: 600px) {
+    .colum {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 .img-main { transition:400ms }
 
 .img-main:hover { transform: scale(1.06, 1.06); }
@@ -357,7 +370,7 @@ body {
 .sync {
     padding: 5px 10px;
     color:white;
-    font-size: 68px;
+    font-size: 48px;
     line-height: 1.0625;
     font-weight: 1000;
     letter-spacing: 0.009em;
@@ -484,10 +497,13 @@ a {
 .perfil-sugestions {
     display: flex;
     height: 298px;
-    width: 120%;
-    border-radius: 25px;
-    background: linear-gradient(45deg, #5180af 0%,#a900bc85 100%);
-    margin: 43px 39px;
+    width: 89%;
+    border-radius: 35px;
+    background: linear-gradient(45deg, #802ac7,#0adfbbe0);
+    margin: 43px 39px;  
+    overflow: hidden;
+    animation: transition-gradient 3s ease infinite;
+    background-size: 120% 120%;
 }
 
 .perfil-sugestions-img {
