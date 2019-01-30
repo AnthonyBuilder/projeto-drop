@@ -1,0 +1,96 @@
+
+input {
+    border-style: none;
+    border: white solid 2.5px;
+    margin: 12px;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 20px;
+    width: 23%;
+    font-weight: 700;
+    transition: 384ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(69deg, rgb(8, 202, 103),#0642ec );
+    background-size: 200% 200%;
+}
+
+.button {
+    width: 52px;
+    border-radius: 100%;
+    height: 52px;
+    background-image: url(img/arrow.png);
+    background-size: 36px;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: 8px 9px;
+    box-shadow: -1px 0px 25px -10px;
+}
+
+input:focus {
+    background-color:rgba(0, 0, 0, 0.7);
+    color: white;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 61px -12px black;
+    font-size: 28px;
+    font-weight: 100;
+    outline-style: none;   
+}
+
+.hidden {
+    animation-name: fadeAndTransition;
+    animation-timing-function: cubic-bezier(0.65, 0.01, 0.14, 0.93);
+    animation-duration: 1.5s;
+    
+}
+
+.hiddenbody {
+    animation-name: fade;
+    animation-timing-function: cubic-bezier(0.65, 0.01, 0.14, 0.93);
+    animation-duration: 2s;
+}
+
+.dsnonebody {
+    background-color: black;
+}
+
+.dsnone {
+    display: none;
+}
+
+@keyframes fadeAndTransition {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    to {
+        opacity: 0;
+        transform: translateX(-50px);
+        
+    }
+
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0; 
+    }
+
+}
+
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-shadow: 0px 18px 90px black;
+    color: white;
+    font-size: 43px;
+}
