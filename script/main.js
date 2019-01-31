@@ -37,6 +37,12 @@ cardBefore6 = document.getElementById("card-before6");
 card7 = document.getElementById("card7");
 cardBefore7 = document.getElementById("card-before7");
 
+card8 = document.getElementById("card8");
+cardBefore8 = document.getElementById("card-before8");
+
+card1 = document.getElementById("card1");
+cardBefore1 = document.getElementById("card-before1");
+
 function hoverChild(){ 
     cardBefore.classList.toggle("card-before-blur");
 }
@@ -66,6 +72,14 @@ card7.addEventListener("mouseover", hoverChild7, false);
 card7.addEventListener('mouseout',hoverChild7,false);
 
 
+function hoverChild8(){ 
+    cardBefore8.classList.toggle("card-before-blur");
+}
+
+card8.addEventListener("mouseover", hoverChild8, false);
+card8.addEventListener('mouseout',hoverChild8,false);
+
+
 function hoverChild4(){ 
     cardBefore4.classList.toggle("card-before-blur");
 }
@@ -80,6 +94,16 @@ function hoverChild6(){
 
 card6.addEventListener("mouseover", hoverChild6, false);
 card6.addEventListener('mouseout',hoverChild6,false);
+
+
+
+function hoverChild1(){ 
+    cardBefore1.classList.toggle("card-before-blur");
+}
+
+card1.addEventListener("mouseover", hoverChild1, false);
+card1.addEventListener('mouseout',hoverChild1,false);
+
 
 //Quando a animação terminar ele inicia o escurecimento
 setTimeout(function(){

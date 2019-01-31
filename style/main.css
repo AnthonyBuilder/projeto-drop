@@ -128,14 +128,16 @@ body {
 
 .row {
     display: flex;
+    overflow: hidden;   
     flex-direction: row;
     padding: 26px 0;
+    width: 128%;
 }
 
 .row:after {
     content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    flex-direction: row;
 }
 
 .header {
@@ -186,7 +188,8 @@ body {
 
 .header h2:hover {
     color: white;
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
+    cursor: pointer;
 }
 
 .header ul li {
@@ -211,7 +214,7 @@ body {
     to {
         opacity: 1;
     }
-}
+}   
 
 .card {
     width: 230px;
@@ -270,6 +273,13 @@ body {
     background-size: 100% 100%;
     
     background: linear-gradient(45deg, #cd00e894 0%,#671ddc94 100%);
+}
+
+
+.card8 {
+    background-size: 100% 100%;
+
+    background: linear-gradient(133deg, #4d3e3e ,#a170cf );
 }
 
 .card4 {
@@ -347,7 +357,7 @@ body {
 }
 
 .wrapper-produtos {
-    padding: 9px 20px;
+    padding: 100px 20px;
 }
 
 .wrapper-main {
@@ -383,7 +393,7 @@ body {
 }
 
 .destaques-section {
-    margin: 17% 20px;
+    margin: 11% 20px;
 }
 
 .sub {
@@ -513,4 +523,3 @@ a {
 
     box-shadow: 0 0 30px -10px;
 }
-

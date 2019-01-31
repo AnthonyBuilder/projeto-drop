@@ -1,14 +1,16 @@
-
+let divInputs = document.querySelector('.card');
+let body = document.querySelector(".body-background");
+let text = document.getElementById("text");
 
 function out() {
-    let divInputs = document.getElementById('divinputs');
+
     divInputs.classList.add('hidden');
-
-    let body = document.getElementsByTagName('body');
     body.classList.add('hiddenbody');
-
+    body.classList.add("dsnonebody");
     setTimeout(function() {
-        divInputs.classList.remove('hidden').add('dsnone');
-        body.classList.add('dsnonebody');
-    }, 1000);
+        divInputs.classList.add('dsnone');
+        body.classList.remove("body-background");
+        body.classList.add("dsnone");
+        text.classList.add('dsdone');
+    }, 800);
 }
