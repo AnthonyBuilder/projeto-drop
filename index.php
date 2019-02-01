@@ -57,11 +57,11 @@
     </div> 
         <div class="header" id="header">
             <ul>
-                <l1><h1>Drop</h1></l1>
-                <l1><h2>Home</h2></l1>
-                <l1><h2>Perfil</h2></l1>
-                <l1><h2>Amigos</h2></l1>
-                <l1><h2>Coleção</h2></l1>
+                <li><h1>Drop</h1></li>
+                <li><h2>Home</h2></li>
+                <li><h2>Perfil</h2></li>
+                <li><h2>Amigos</h2></li>
+                <li><h2>Coleção</h2></li>
             </ul>
         </div>
     </div>
